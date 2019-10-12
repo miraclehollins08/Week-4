@@ -1,0 +1,100 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 500px;
+    display: flex; 
+}
+.container .box
+{
+    position: relative;
+    width: 250px;
+    height: 500px;
+    background: #ccc;
+    transition: 0.5s;
+}
+.container .box .thumb
+{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.container .box:nth-child(odd) .thumb
+{
+bottom: 0;
+left: 0;
+}
+.container .box .thumb img
+{
+  width: 100%;  
+}
+.container .box .details
+{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #262626;
+}
+.container .box:nth-child(even) .detail
+{
+    bottom: 0;
+    left: 0;
+}
+.container .box:nth-child(1) .detail
+{
+    background:#8553cb;
+}
+.container .box:nth-child(2) .detail
+{
+    background:#fe8f01;
+}
+.container .box:nth-child(3) .detail
+{
+    background:#79d400;
+}
+.container .box:nth-child(4) .detail
+{
+    background:#ff3b34;
+}
+.container .box .detail .content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5%;
+}
+.container .box .detail .content .fa
+{
+font-size: 80px;
+color: #fff;
+}
+.container .box .detail .content h3
+{
+    margin: 0;
+    padding: 0;
+    padding: 10px o;
+    color: #fff;
+}
+.container .box .detail .content a
+{
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
